@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<unistd.h>
 int main()
 {
@@ -6,7 +7,7 @@ int main()
   while((pid=fork())<0);
   if(pid==0)
   {
-    if(execlp("./lab1_2_1","lab1_2_1",NULL)<0)
+    if(execlp("./lab1_1_2","lab1_1_2",NULL)<0)
       printf("execlp error\n");
   }
   else
